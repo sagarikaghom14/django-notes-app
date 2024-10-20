@@ -38,6 +38,7 @@ pipeline{
             steps{
                 echo "This is deploying the code"
                 bat 'docker compose down && docker compose up -d'
+                echo "All set"
             }
         }
     }
